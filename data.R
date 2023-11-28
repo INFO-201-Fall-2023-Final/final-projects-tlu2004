@@ -5,6 +5,12 @@ library(stringr)
 
 finance_df <- read.csv("DistrictCostDatabase_2023.csv")
 scores_df <- read.csv("seda2022_admindist_poolsub_ys_2.0.csv")
+poverty_df <- read.csv("ussd21.csv")
+
+# Data-wrangling
+get_id <- function(){
+  
+}
 
 
 df <- left_join(finance_df, scores_df, by = c("name" = "country"))
